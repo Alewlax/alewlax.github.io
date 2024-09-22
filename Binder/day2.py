@@ -1,0 +1,6 @@
+print("Bienvenido a la calculadora de la cuenta, su propina y cuanto le toca pagar a cada quien.")
+cuenta = float(input("¿Cuanto es el total de la cuenta?\n$"))
+propina = int(input("¿Cuanto porcentaje de propina quieres dar? El 10, 12, o 15?\n"))
+personas= int(input("¿En cuantas personas se dividirá la cuenta?\n"))
+cuenta_final = round(cuenta * (propina / 100 + 1) / personas,2)
+print(f"Cada persona debe pagar ${cuenta_final} pesos.")
